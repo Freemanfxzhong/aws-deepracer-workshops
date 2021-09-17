@@ -105,7 +105,7 @@ def episode_parser(df, action_map=True, episode_map=True):
         y = float(row['y'])
         angle = float(row['steer'])
         ttl = float(row['throttle'])
-        action = int(row['action'])
+        action = int(float(row['action']))
         reward = float(row['reward'])
 
         try:
@@ -272,3 +272,6 @@ def plot_grid_world(episode_df, inner, outer, scale=1.0, plot=True):
         #plt.savefig('grid.png')
 
     return lap_time, average_throttle, stats
+
+def hello():
+    print('hello')

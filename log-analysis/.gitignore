@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+downloaded_model/
+intermediate_checkpoint/
+logs/*
+tmp/
